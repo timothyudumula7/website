@@ -27,13 +27,18 @@
       color: white;
       text-decoration: none;
       font-weight: bold;
+      cursor: pointer;
     }
     nav a:hover {
       background: #94d2bd;
       color: black;
     }
     section {
+      display: none;
       padding: 40px;
+    }
+    section.active {
+      display: block;
     }
     h2 {
       color: #005f73;
@@ -65,12 +70,12 @@
   </header>
 
   <nav>
-    <a href="#experience">Experience</a>
-    <a href="#education">Education</a>
-    <a href="#projects">Projects</a>
+    <a onclick="showSection('experience')">Experience</a>
+    <a onclick="showSection('education')">Education</a>
+    <a onclick="showSection('projects')">Projects</a>
   </nav>
 
-  <section id="experience">
+  <section id="experience" class="active">
     <h2>Experience</h2>
     <p><strong>Field Technician Intern – Lookout Mountain Technologies, Chattanooga, TN</strong> (Mar 2025 – Present)<br>
       Provided technical support, vendor coordination, and ticket resolution using Service Management protocols.</p>
@@ -98,6 +103,16 @@
   <footer>
     &copy; 2025 Timothy Udumula | <a href="mailto:mtsu777@yahoo.com" style="color: white;">mtsu777@yahoo.com</a>
   </footer>
+
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(section => {
+        section.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
 
 </body>
 </html>
