@@ -1,49 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Timothy Udumula</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to NetworkTim</title>
   <style>
     body {
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: #f4f4f4;
-      color: #333;
+    }
+    header {
+      background: #005f73;
+      color: white;
+      padding: 20px;
       text-align: center;
     }
-    .container {
-      max-width: 600px;
-      margin: 100px auto;
-      padding: 20px;
-      background: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      border-radius: 10px;
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #0a9396;
     }
-    h1 {
-      margin-bottom: 10px;
+    nav a {
+      padding: 15px 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
     }
-    p {
-      font-size: 1.2em;
-      line-height: 1.6;
+    nav a:hover {
+      background: #94d2bd;
+      color: black;
+    }
+    section {
+      padding: 40px;
+    }
+    h2 {
+      color: #005f73;
     }
     footer {
-      margin-top: 40px;
-      font-size: 0.8em;
-      color: #888;
+      background: #005f73;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+    .contact-info {
+      margin-top: 20px;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Timothy Udumula</h1>
-    <p>
-      Hi! I'm Timothy — a tech enthusiast passionate about helping beginners learn IT the easy way. I love building things, solving tech puzzles, and sharing what I learn along the way.
-    </p>
-    <footer>
-      &copy; 2025 Timothy Udumula
-    </footer>
-  </div>
+
+  <header>
+    <h1>Welcome to NetworkTim</h1>
+    <p>Hi, I'm Timothy Udumula — Field Technician and Cybersecurity Enthusiast</p>
+    <div class="contact-info">
+      <p>Email: <a href="mailto:mtsu777@yahoo.com" style="color: white;">mtsu777@yahoo.com</a></p>
+      <p>GitHub: <a href="https://github.com/timothyudumula7" target="_blank" style="color: white;">github.com/timothyudumula7</a></p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+  </nav>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <p><strong>Field Technician Intern – Lookout Mountain Technologies, Chattanooga, TN</strong> (Mar 2025 – Present)<br>
+      Provided technical support, vendor coordination, and ticket resolution using Service Management protocols.</p>
+    <p><strong>SOC Intern – METMOX, Hyderabad</strong> (Jan 2023 – Mar 2023)<br>
+      Designed a virtual IT environment, configured Active Directory, implemented STP and ACLs, and wrote bash scripts.</p>
+    <p><strong>Food Service Worker – Compass Group, Baltimore</strong> (Sep 2023 – Oct 2024)<br>
+      Managed inventory, trained new hires, and maintained safety and service standards in a high-volume environment.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p><strong>University of Maryland, Baltimore</strong><br>
+      M.S. in Cyber Security | 2023 – 2025</p>
+    <p><strong>KL University, India</strong><br>
+      B.Tech in Electronics and Communications Engineering | 2018 – 2022</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <p><strong>Pi-hole DNS Server:</strong> Configured a Linux-based DNS filtering server with ACL/firewall rules and documentation.</p>
+    <p><strong>Server & Network Deployment:</strong> Built and maintained Ubuntu/Windows servers with NAS and network addressing.</p>
+    <p><strong>Cisco Network Setup:</strong> Deployed VLANs and ACLs with routers/switches for a multi-office simulation.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Timothy Udumula | <a href="mailto:mtsu777@yahoo.com" style="color: white;">mtsu777@yahoo.com</a>
+  </footer>
+
 </body>
 </html>
